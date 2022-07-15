@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>Player 1 will be X</h2>
+    <h2>Player 2 will be O</h2>
+    <h2>Tap on a box to get started!</h2>
+    <script src = "game.js"></script>
+<input type="text" id="TL" onclick=
+    "topLeft(); playGame();" readonly>
+
+<input type="text" id="TM" onclick=
+    "topMiddle(); playGame();" readonly>
+
+<input type="text" id="TR" onclick=
+    "topRight(); playGame();" readonly>
+<br><br>
+
+<input type="text" id="ML" onclick=
+    "middleLeft(); playGame();" readonly>
+       
+<input type="text" id="MM" onclick=
+    "middle(); playGame();" readonly>
+
+<input type="text" id="MR" onclick=
+    "middleRight(); playGame();" readonly>
+<br><br>
+
+<input type="text" id="BL" onclick=
+    "bottomLeft(); playGame();" readonly>
+
+<input type="text" id="BM" onclick=
+    "bottomMiddle(); playGame();" readonly>
+
+<input type="text" id="BR" onclick=
+    "bottomRight(); playGame();" readonly>
+
+
+<br><br><br>
+
+<button id="Restart" onclick="restart()">
+    RESTART
+</button>
+
+<br><br>
+
+<p id="Winner"></p>
+
+</body>
+</html>
